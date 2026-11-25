@@ -1,0 +1,174 @@
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>جزئیات محصول | LUNA</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .product-page {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 30px;
+        color: #c6a96b;
+        text-decoration: none;
+      }
+
+      .detail-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+        align-items: start;
+      }
+
+      .gallery {
+        min-width: 0;
+      }
+
+      .main-image {
+        width: 100%;
+        height: 520px;
+        object-fit: contain;
+        background: #171717;
+        border-radius: 16px;
+        cursor: zoom-in;
+      }
+
+      .thumbnail-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 15px;
+      }
+
+      .thumbnail {
+        width: 85px;
+        height: 85px;
+        object-fit: contain;
+        background: #171717;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .thumbnail.active {
+        border-color: #c6a96b;
+      }
+
+      .product-details {
+        padding: 10px 0;
+      }
+
+      .product-details h1 {
+        font-size: 30px;
+        margin: 0 0 18px;
+      }
+
+      .detail-price {
+        font-size: 26px;
+        color: #c6a96b;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+
+      .detail-description {
+        line-height: 2.2;
+        color: #ccc;
+        margin: 25px 0;
+        white-space: pre-wrap;
+      }
+
+      .detail-meta {
+        padding: 18px 0;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        line-height: 2.5;
+      }
+
+      .detail-meta span {
+        color: #c6a96b;
+      }
+
+      .quantity-box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 25px 0;
+      }
+
+      .quantity-box button {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .add-cart-detail {
+        width: 100%;
+        padding: 15px;
+        background: #c6a96b;
+        color: #111;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .add-cart-detail:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .detail-message {
+        margin-top: 15px;
+        color: #c6a96b;
+      }
+
+      .not-found {
+        text-align: center;
+        padding: 100px 20px;
+      }
+
+      @media (max-width: 768px) {
+        .detail-layout {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .main-image {
+          height: 350px;
+        }
+
+        .product-details h1 {
+          font-size: 24px;
+        }
+
+        .product-page {
+          margin-top: 20px;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="product-page">
+      <a href="index.html" class="back-link"> ← بازگشت به فروشگاه </a>
+
+      <div id="productContent">
+        <p>در حال بارگذاری محصول...</p>
+      </div>
+    </main>
+
+    <script src="products.js"></script>
+    <script src="product.js"></script>
+  </body>
+</html>
